@@ -38,14 +38,21 @@ public class GildedRoseTest {
         Item[] items = new Item[] { new Item("Sulfuras, Hand of Ragnaros", 0,10) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
-        assertEquals(9, app.items[0].quality);
+        assertEquals(10, app.items[0].quality);
     }
     
     public void Sulfuras_sellIn() {
         Item[] items = new Item[] { new Item("Sulfuras, Hand of Ragnaros", 10,0) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
-        assertEquals(9, app.items[0].sellIn);
+        assertEquals(10, app.items[0].sellIn);
+    }
+	
+	public void AgedBrie_quality() {
+        Item[] items = new Item[] { new Item("Aged Brie", 10,0) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(11, app.items[0].sellIn);
     }
     
 }
