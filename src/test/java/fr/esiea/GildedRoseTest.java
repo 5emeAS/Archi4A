@@ -48,21 +48,28 @@ public class GildedRoseTest {
         assertEquals(10, app.items[0].sellIn);
     }
 	
-	public void AgedBrie_quality() {
+    public void AgedBrie_quality() {
         Item[] items = new Item[] { new Item("Aged Brie", 0,10) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
         assertEquals(11, app.items[0].quality);
     }
 	
-		public void AgedBrie_sellIn() {
+    public void AgedBrie_sellIn() {
         Item[] items = new Item[] { new Item("Aged Brie", 10,0) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
         assertEquals(11, app.items[0].sellIn);
     }
 	
-	public void BackStage_quality() {
+    public void BackStage_quality() {
+        Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 0, 10) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(13, app.items[0].quality);
+    }
+                
+    public void BackStage_sellIn() {
         Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 10,0) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
