@@ -11,7 +11,7 @@ public class GildedRoseTest {
         Item[] items = new Item[] { new Item("Metal Sword", 0, 0) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
-        assertEquals("fixme", app.items[0].name);
+        assertEquals("Metal Sword", app.items[0].name);
     }
     public void fixquality() {
         Item[] items = new Item[] { new Item("Metal Sword", 0,10) };
@@ -54,5 +54,11 @@ public class GildedRoseTest {
         app.updateQuality();
         assertEquals(11, app.items[0].sellIn);
     }
-    
+	
+	public void BackStage_quality() {
+        Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 10,0) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(12, app.items[0].sellIn);
+    }
 }
