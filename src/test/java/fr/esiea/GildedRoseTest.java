@@ -49,6 +49,13 @@ public class GildedRoseTest {
     }
 	
 	public void AgedBrie_quality() {
+        Item[] items = new Item[] { new Item("Aged Brie", 0,10) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(11, app.items[0].quality);
+    }
+	
+		public void AgedBrie_sellIn() {
         Item[] items = new Item[] { new Item("Aged Brie", 10,0) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
