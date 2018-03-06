@@ -5,15 +5,14 @@
   <version>0.0.1-SNAPSHOT</version>	
   <build>
   	<plugins>
-  		<plugin>
-  			  <groupId>fr.esiea.coveralls</groupId>
-    		  	  <artifactId>coveralls-maven-plugin</artifactId>
-   			  <version>0.0.1-SNAPSHOT</version>
-			  <packaging>maven-plugin</packaging>
-    		  <configuration>
-        		  <repoToken>t5LoXGELuV2UmASCV2IpU1XUul6ydcCeo6PGb</repoToken>
-    		  </configuration>
-  		</plugin>
+<plugin>
+    <groupId>fr.esiea.coveralls</groupId>
+    <artifactId>coveralls-maven-plugin</artifactId>
+    <version>4.3.0</version>
+    <configuration>
+        <repoToken>cZmzj0xefTRqmobb2ntxYCNKzAM8BkK87</repoToken>
+    </configuration>
+</plugin>
   	</plugins>
   </build>
 
