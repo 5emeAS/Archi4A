@@ -11,9 +11,14 @@
     <version>4.3.0</version>
     <configuration>
         <repoToken>cZmzj0xefTRqmobb2ntxYCNKzAM8BkK87</repoToken>
+    <packaging>maven-plugin</packaging>
+ 
+  <name>coveralls-maven-plugin</name>
+  <description>Maven plugin for submitting Java code coverage reports to Coveralls web service.</description>
+  <url>https://github.com/trautonen/coveralls-maven-plugin</url>
     </configuration>
 </plugin>
-  	</plugins>
+  	</plugins>  	
   </build>
 
     <dependencies>
