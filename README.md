@@ -1,4 +1,11 @@
 # Archi4A
+
+Membres:
+
+Arnaud SOULAT
+Baptiste MALANDAIN
+Dereck MUNAR
+
 circleci:
  
 <a href="https://circleci.com/gh/5emeAS/Archi4A"><img src="https://circleci.com/gh/5emeAS/Archi4A.svg?style=svg"></a>
