@@ -6,7 +6,7 @@
   <build>
   	<plugins>
 <plugin>
-    <groupId>fr.esiea.coveralls</groupId>
+    <groupId>org.eluder.coveralls</groupId>
     <artifactId>coveralls-maven-plugin</artifactId>
     <version>4.3.0</version>
     <configuration>
