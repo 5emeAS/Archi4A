@@ -19,8 +19,21 @@ public class GildedRoseTest {
         app.updateQuality();
         assertEquals(9, app.items[0].quality);
     }
+    
+    public void fixnotnegativequality() {
+        Item[] items = new Item[] { new Item("Metal Sword", 0,0) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(0, app.items[0].quality);
+    }
+    public void fixlimitBackstagequality() {
+        Item[] items = new Item[] { new Item("Backstage passes to a TAFKAL80ETC concert", 0,50) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(50, app.items[0].quality);
+    }
 
-    public void fixprice() {
+    public void fixsellIn() {
         Item[] items = new Item[] { new Item("Metal Sword", 10,0) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
