@@ -1,4 +1,2 @@
 language: java
-
-repo_token: cZmzj0xefTRqmobb2ntxYCNKzAM8BkK87
 gem 'coveralls', require: false
