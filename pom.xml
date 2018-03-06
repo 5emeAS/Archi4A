@@ -10,7 +10,8 @@
     <artifactId>coveralls-maven-plugin</artifactId>
     <version>4.3.0</version>
     <configuration>
-        <repoToken>cZmzj0xefTRqmobb2ntxYCNKzAM8BkK87</repoToken>
+        <repoToken>repo_token: UW9iKRShx1VQAjOpSNJEMXPC46yAhtgO7
+</repoToken>
     <packaging>maven-plugin</packaging>
  
   <name>coveralls-maven-plugin</name>
