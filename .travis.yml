@@ -1,8 +1,4 @@
 language: java
 
 after_success:
-- coveralls --verbose
-
-
-
-
+- mvn clean cobertura:cobertura org.eluder.coveralls:coveralls-maven-plugin:report

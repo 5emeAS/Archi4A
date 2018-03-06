@@ -5,21 +5,29 @@
   <version>0.0.1-SNAPSHOT</version>	
   <build>
   	<plugins>
-<plugin>
-    <groupId>org.eluder.coveralls</groupId>
-    <artifactId>coveralls-maven-plugin</artifactId>
-    <version>4.3.0</version>
-    <configuration>
-        <repoToken>repo_token: UW9iKRShx1VQAjOpSNJEMXPC46yAhtgO7
-</repoToken>
-    <packaging>maven-plugin</packaging>
- 
-  <name>coveralls-maven-plugin</name>
-  <description>Maven plugin for submitting Java code coverage reports to Coveralls web service.</description>
-  <url>https://github.com/trautonen/coveralls-maven-plugin</url>
-    </configuration>
-</plugin>
+		<plugin>
+    	<groupId>org.eluder.coveralls</groupId>
+    	<artifactId>coveralls-maven-plugin</artifactId>
+    	<version>4.3.0</version>
+    	<configuration>
+         <repoToken>UW9iKRShx1VQAjOpSNJEMXPC46yAhtgO7</repoToken>
+    	</configuration>
+		</plugin>
+		
+		<plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>cobertura-maven-plugin</artifactId>
+        <version>2.7</version>
+        <configuration>
+          <format>xml</format>
+          <maxmem>256m</maxmem>
+          <aggregate>true</aggregate>
+          <check/>
+        </configuration>
+      </plugin>
+      
   	</plugins>  	
+  
   </build>
 
     <dependencies>
@@ -31,4 +39,5 @@
             <type>jar</type>
         </dependency>
     </dependencies>
+    
 </project>
