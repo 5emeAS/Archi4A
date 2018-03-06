@@ -6,15 +6,22 @@
   <build>
   	<plugins>
   		<plugin>
-  			  <groupId>org.eluder.coveralls</groupId>
-    		  <artifactId>coveralls-maven-plugin</artifactId>
+  			  <groupId>fr.esiea.coveralls</groupId>
+    		  	  <artifactId>coveralls-maven-plugin</artifactId>
    			  <version>4.3.0</version>
+			  <packaging>maven-plugin</packaging>
     		  <configuration>
         		  <repoToken>t5LoXGELuV2UmASCV2IpU1XUul6ydcCeo6PGb</repoToken>
     		  </configuration>
   		</plugin>
   	</plugins>
   </build>
+
+  <name>coveralls-maven-plugin</name>
+  <description>Maven plugin for submitting Java code coverage reports to Coveralls web service.</description>
+  <url>https://github.com/5emeAS/Archi4A</url>
+  <inceptionYear>2018</inceptionYear>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
